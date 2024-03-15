@@ -1,0 +1,65 @@
+//QN1
+
+package com.assignment3;
+
+public class assignment3 {
+public static void main(String[] args) {
+	int a= 15;
+	double b= a;
+	System.out.println("double :" + b);
+}
+}
+ ------------------------------------------
+//QN2
+package com.assignment3;
+
+public class q2 {
+public static void main(String[] args) {
+	double a= 15.0542574d;
+	int b= (int)a;
+	System.out.println("int num ;" + b);
+}
+}
+---------------------------------------------
+//QN3
+package com.assignment3;
+
+public class q3 {
+	    public static void main(String[] args) {
+	        int intVal = 10;
+	        double doubleVal = 5.5;
+	        float floatVal = 3.14f;
+
+	        double result1 = intVal + doubleVal;
+	        float result2 = floatVal - intVal;
+	        double result3 = doubleVal * floatVal;
+
+	        System.out.println("result 1 = " + result1);
+	        System.out.println("result 2 = " + result2);
+	        System.out.println("result 3 = " + result3);
+	    }
+	}
+
+---------------------------------------------------
+//QN4
+package com.assignment3;
+
+public class q4 {
+
+	    public static void main(String[] args) {
+	        int myInt = 10;
+
+	        double myDouble = myInt;
+	        System.out.println("The double value is: " + myDouble);
+
+	        float myFloat = myInt;
+	        System.out.println("The float value is: " + myFloat);
+
+	        boolean myBoolean = myInt != 0;
+	        System.out.println("The boolean value is: " + myBoolean);
+
+	        String myString = String.valueOf(myInt);
+	        System.out.println("The string value is: " + myString);
+	    }
+	}
+
