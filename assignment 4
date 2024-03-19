@@ -1,0 +1,94 @@
+//qn1
+package com.assignment4;
+
+public class Employee {
+	private String name;
+	private String id;
+	private String salary;
+
+	void info(String name, int id, int salary) {
+		System.out.println("Name of employee: " + name);
+		System.out.println("Id of employee: " + id);
+		System.out.println("salary of employee: " + salary);
+	}
+
+	void info(int account) {
+		System.out.println("account number: " + account);
+	}
+
+	public static void main(String[] args) {
+		Employee employee = new Employee();
+		employee.info("hrishi", 4556, 45000);
+		employee.info(5000);
+	}
+}
+//-----------------------------------------------------------------------//
+QN2
+package com.assignment4;
+
+import java.util.Scanner;
+
+public class Student {
+
+	String name;
+	int rollno;
+	int marks;
+
+	public void acceptRecord() {
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.print("Name: ");
+			this.name = sc.nextLine();
+			System.out.print("Rollno: ");
+			this.rollno = sc.nextInt();
+			System.out.print("Marks: ");
+			this.marks = sc.nextInt();
+		}
+	}
+
+	public void printRecord() {
+		System.out.println(this.name + "  " + this.rollno + "   " + this.marks);
+	}
+
+	public static void main(String[] args) {
+
+		Student stu = new Student();
+		stu.acceptRecord();
+		stu.printRecord();
+	}
+
+}
+//--------------------------------------------------------//
+QN3
+package com.assignment4;
+
+public class Vehicle {
+	private String name;
+	private int speed;
+
+	public Vehicle(String name, int speed) {
+		this.name = name;
+		this.speed = speed;
+	}
+
+	public void move() {
+		System.out.println("SPEED " + speed );
+	}
+
+	public void move(int newSpeed) {
+		speed = newSpeed;
+		System.out.println("Speed" + speed );
+	}
+
+	public void move(String destination) {
+		System.out.println("Destination" + destination);
+	}
+
+	public static void main(String[] args) {
+
+		Vehicle car = new Vehicle("Car", 60);
+
+		car.move();
+		car.move(70);
+		car.move("New York");
+	}
+}
